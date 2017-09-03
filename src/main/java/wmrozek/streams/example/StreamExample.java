@@ -38,6 +38,7 @@ public class StreamExample {
         System.out.println(maxAge);
         System.out.println(maxAge2);
 
+
         PersonStream p1 = Stream.of(list.get(0), list.get(1),list.get(2))
                 .filter(e-> e.getName().equals("Maciej") && e.getSurname().equals("Nowak"))
                 .findAny().get();
